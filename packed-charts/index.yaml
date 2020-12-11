@@ -1,0 +1,47 @@
+apiVersion: v1
+entries:
+  custom-component:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2020-12-11T13:22:55.281347005+04:00"
+    description: Chart for custom-component service
+    digest: 0cdd4d2e6cd26525d94cd4eeabc88f694b3fc9d9ebc496c0c59a10bed76a1101
+    name: custom-component
+    type: application
+    urls:
+    - https://th2-charts.nexus.test.com/custom-component-0.1.0.tgz
+    version: 0.1.0
+  th2:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2020-12-11T13:22:55.290735271+04:00"
+    dependencies:
+    - alias: rabbitmq
+      condition: rabbitmq.internal
+      name: rabbitmq-ha
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.44.4
+    - alias: cassandra
+      condition: cassandra.internal
+      name: cassandra
+      repository: https://charts.bitnami.com/bitnami
+      version: 5.4.1
+    description: th2 service Helm chart
+    digest: 0b77e071f44df7c27bebc81d71acf9fa016473f19458304b306f9364b7796144
+    name: th2
+    type: application
+    urls:
+    - https://th2-charts.nexus.test.com/th2-1.0.0.tgz
+    version: 1.0.0
+  th2-ingress-rules:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2020-12-11T13:22:55.291176599+04:00"
+    description: th2 ingress rules Helm chart
+    digest: 0efdbc2abf0f3dd93ed65c961d8132325e889ef10eccb7a7bd0053a2195b48aa
+    name: th2-ingress-rules
+    type: application
+    urls:
+    - https://th2-charts.nexus.test.com/th2-ingress-rules-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-12-11T13:22:55.280075663+04:00"
